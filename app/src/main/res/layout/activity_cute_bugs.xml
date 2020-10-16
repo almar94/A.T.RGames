@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pairMatching.CuteBugs">
+
+    <TextView
+        android:id="@+id/pointsPair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="0 נקודות"
+        android:textColor="@color/purple_700"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/homeCuteBugs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_baseline_home_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPair1"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cute"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pointsPair" />
+
+    <Button
+        android:id="@+id/buttonPair2"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cute"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPair3"
+        app:layout_constraintStart_toEndOf="@+id/buttonPair1"
+        app:layout_constraintTop_toBottomOf="@+id/pointsPair" />
+
+    <Button
+        android:id="@+id/buttonPair3"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/cute"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pointsPair" />
+
+    <Button
+        android:id="@+id/buttonPair4"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/cute"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPair1" />
+
+    <Button
+        android:id="@+id/buttonPair5"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/cute"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPair6"
+        app:layout_constraintStart_toEndOf="@+id/buttonPair4"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPair2" />
+
+    <Button
+        android:id="@+id/buttonPair6"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/cute"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPair3" />
+
+    <Button
+        android:id="@+id/buttonPair7"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/cute"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPair4" />
+
+    <Button
+        android:id="@+id/buttonPair8"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/cute"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPair9"
+        app:layout_constraintStart_toEndOf="@+id/buttonPair7"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPair5" />
+
+    <Button
+        android:id="@+id/buttonPair9"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/cute"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPair6" />
+
+    <Button
+        android:id="@+id/buttonPair10"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/cute"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPair7" />
+
+    <Button
+        android:id="@+id/buttonPair11"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/cute"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPair12"
+        app:layout_constraintStart_toEndOf="@+id/buttonPair10"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPair8" />
+
+    <Button
+        android:id="@+id/buttonPair12"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/cute"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPair9" />
+
+    <TextView
+        android:id="@+id/pop_upCuteBugs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

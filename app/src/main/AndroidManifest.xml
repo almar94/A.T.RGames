@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.ATRGames">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/atr_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/atr_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+
+        <activity android:name=".pairMatching.PairMenu" />
+        <activity android:name=".pairMatching.CuteDragons" />
+        <activity android:name=".pairMatching.CuteBugs" />
+        <activity android:name=".fillTheBlank.ResultFillTheBlank" />
+        <activity android:name=".meaningQuestions.ResultMeaning" />
+        <activity android:name=".MathExercises.DifficultTask" />
+        <activity android:name=".MathExercises.EasyTask" />
+        <activity android:name=".MathExercises.PickLevel" />
+        <activity android:name=".fillTheBlank.FillTheBlankActivity" />
+        <activity android:name=".GamesMenu" />
+        <activity android:name=".MainScreen" />
+        <activity android:name=".meaningQuestions.meaningQuestionsActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

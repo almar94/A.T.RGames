@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MathExercises.EasyTask"
+    android:background="@drawable/my_background">
+
+    <ImageButton
+        android:id="@+id/easy_home"
+        android:layout_width="27dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_baseline_home_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:background="#747d8c"
+        android:text="לחץ כדי להתחיל"
+        android:textColor="@color/purple_700"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+       />
+
+    <Button
+        android:id="@+id/easy_show1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#747d8c"
+        android:textColor="@color/purple_700"
+        android:textSize="30sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/easy_show2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/easy_show2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#747d8c"
+        android:visibility="gone"
+        android:textColor="@color/purple_700"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/start_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countQuestion" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:max="50"
+        android:progress="30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/purple_700"
+        android:text="timer"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <TextView
+        android:id="@+id/pointsMath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/purple_700"
+        android:text="points"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <TextView
+        android:id="@+id/countQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/purple_700"
+        android:text="Questions"
+        android:textSize="45dp"
+        app:layout_constraintEnd_toStartOf="@+id/pointsMath"
+        app:layout_constraintStart_toEndOf="@+id/timer"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_math_answer11"
+                android:layout_width="205dp"
+                android:layout_height="200dp"
+                android:background="#82B1FF"
+                android:text="0"
+                android:textColor="@color/purple_700"
+                android:textSize="60sp" />
+
+            <Button
+                android:id="@+id/btn_math_answer12"
+                android:layout_width="205dp"
+                android:layout_height="200dp"
+                android:background="#84FFFF"
+                android:text="0"
+                android:textColor="@color/purple_700"
+                android:textSize="60sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_math_answer13"
+                android:layout_width="205dp"
+                android:layout_height="200dp"
+                android:background="#FFE57F"
+                android:text="0"
+                android:textColor="@color/purple_700"
+                android:textSize="60sp" />
+
+            <Button
+                android:id="@+id/btn_math_answer14"
+                android:layout_width="205dp"
+                android:layout_height="200dp"
+                android:background="#FF9E80"
+                android:text="0"
+                android:textColor="@color/purple_700"
+                android:textSize="60sp" />
+        </TableRow>
+
+    </TableLayout>
+
+
+    <TextView
+        android:id="@+id/TV_math_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 / 0"
+        android:textColor="@color/purple_700"
+        android:textSize="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>
